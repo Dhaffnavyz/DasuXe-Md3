@@ -9423,7 +9423,7 @@ case 'allmenu' :
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
                 DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }})                
-await DhaffNetwork.send5ButGif(from, `
+await DhaffNetwork.send5ButGif(m.chat, global.vidmenu, `
 ▛▀▀▀▀▀▀▀▀▀
 ▌ ♨ *I N F O - B O T*
 ▌╓───
