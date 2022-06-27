@@ -9418,11 +9418,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             DhaffNetwork.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu' : {
+case 'allmenu' :
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
                 DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }}) 
-     asu = `
+var unicorn = await getBuffer('./Galeri/video/Daisuxe-bot.mp4')
+await DhaffNetwork.send5ButImg(from, `
 ▛▀▀▀▀▀▀▀▀▀
 ▌ ♨ *I N F O - B O T*
 ▌╓───
@@ -10129,48 +10130,9 @@ case 'allmenu' : {
 ▌╟❯▁ ${prefix}report [bug]
 ▌╚═════════
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-`	                let btn = [{
-                                urlButton: {
-                                    displayText: 'YouTube ❤️',
-                                    url: `${websitex}`
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Script 📄',
-                                    url: `${botscript}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📖',
-                                    id: 'command'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🕊️',
-                                    id: 'owner'
-                                }
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        DhaffNetwork.send5ButImg(m.chat, asu, global.botname, global.thumb, btn, global.thumb)
-                        } else if (setbot.templateGif) {
-                        DhaffNetwork.send5ButGif(m.chat, asu, global.botname, global.vidmenu, btn, global.thumb)
-                        } else if (setbot.templateVid) {
-                        DhaffNetwork.send5ButVid(m.chat, asu, global.botname, global.vidmenu, btn, global.thumb)
-                        } else if (setbot.templateMsg) {
-                        DhaffNetwork.send5ButMsg(m.chat, asu, global.botname, btn)
-                        } else if (setbot.templateDocument) {
-                        let buttonmenu = [
-        	{ urlButton: { displayText: `YouTube ❤️`, url : `${websitex}` } },
-            { urlButton: { displayText: `Script 📄`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `List Menu 📖`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner  `, id: 'owner'} }
-        	]
-        	DhaffNetwork.sendMessage(m.chat, { caption: asu, document: fs.readFileSync('./Galery/theme/daisuxe.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
                  await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./Galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})        	
-                        }
-                     }
-            break
+break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
