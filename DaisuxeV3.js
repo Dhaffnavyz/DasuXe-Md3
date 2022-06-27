@@ -10146,7 +10146,7 @@ let btn = [{
                                     id: 'tqtt'
                                 }                                
                             }]
-                            DhaffNetwork.send5ButGif(m.chat, asu, global.vidmenu, btn)
+                            DhaffNetwork.send5ButGif(m.chat, asu, global.botname, global.vidmenu, btn, global.thumb)
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./Galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 }
 break
