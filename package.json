@@ -1,6 +1,6 @@
 {
- "name": "CheemsBot-MD",
- "description": "Multi Device Whatsapp Bot By Xeon",
+ "name": "DaisuXeBot-MD",
+ "description": "Multi Device Whatsapp Bot By DhafaNp",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Xeon",
+ "author": "DHAFF OFFICIAL",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.0.1",
