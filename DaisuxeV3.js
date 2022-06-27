@@ -9418,11 +9418,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             DhaffNetwork.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu' :
+case 'allmenu' : {
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
                 DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }}) 
-await DhaffNetwork.send5ButGif(m.chat, global.vidmenu, `
+     asu = `
 ▛▀▀▀▀▀▀▀▀▀
 ▌ ♨ *I N F O - B O T*
 ▌╓───
@@ -10129,7 +10129,31 @@ await DhaffNetwork.send5ButGif(m.chat, global.vidmenu, `
 ▌╟❯▁ ${prefix}report [bug]
 ▌╚═════════
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 💸","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+`
+let btn = [{
+                                urlButton: {
+                                    displayText: 'My Owner 🦅',
+                                    url: 'https://wa.me/6283824417034'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'My Github 🐈',
+                                    url: 'https://www.github.com/dhaffnavyz'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Thanks To 📌',
+                                    id: 'tqtt'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Rules Bot',
+                                    id: 'rulles'
+                                }
+                            }]
+                            DhaffNetwork.send5ButGif(m.chat, asu, global.vidmenu, btn)
+                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./Galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+}
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
