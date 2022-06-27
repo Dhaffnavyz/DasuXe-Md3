@@ -9421,8 +9421,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu' :
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'All Menu')
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }})                
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }}) 
 await DhaffNetwork.send5ButGif(m.chat, global.vidmenu, `
 ▛▀▀▀▀▀▀▀▀▀
 ▌ ♨ *I N F O - B O T*
@@ -10130,7 +10129,7 @@ await DhaffNetwork.send5ButGif(m.chat, global.vidmenu, `
 ▌╟❯▁ ${prefix}report [bug]
 ▌╚═════════
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 💸","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 💸","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
