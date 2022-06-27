@@ -10144,12 +10144,7 @@ let btn = [{
                                 quickReplyButton: {
                                     displayText: 'Thanks To 📌',
                                     id: 'tqtt'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Rules Bot',
-                                    id: 'rulles'
-                                }
+                                }                                
                             }]
                             DhaffNetwork.send5ButGif(m.chat, asu, global.vidmenu, btn)
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./Galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
