@@ -1636,6 +1636,7 @@ DhaffNetwork.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.ke
             { quickReplyButton: { displayText: `Owner  `, id: 'owner'} }
         	]
         	DhaffNetwork.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./Galery/theme/daisuxe.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/menu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
                         }
                      }
             break
@@ -1656,7 +1657,7 @@ let buttonmenu = [
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': case 'donasi': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate ☕`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
 ]
@@ -1706,7 +1707,8 @@ case 'me': case 'inventory': case 'profile':{
             { quickReplyButton: { displayText: `Leaderboard 🎢`, id: 'leaderboard'} }
         	]
         	DhaffNetwork.sendMessage(m.chat, { caption: teksehmazeh, document: fs.readFileSync('./Galery/theme/daisuxe.xlsx'), mimetype: `${docs}`, fileName: `Want to adventure again?`, templateButtons: butRun, footer: `${botname}`, mentions: [m.sender] })
-        	}
+             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/procfile.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+          	}
         	break
  case 'banchat': {
  if (isBan) return reply(mess.ban)	 			
@@ -9146,7 +9148,7 @@ url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script ☕',
 url: `${global.botscript}`
 }
 }, {
@@ -9187,7 +9189,7 @@ url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script ☕',
 url: `${global.botscript}`
 }
 }, {
@@ -9248,7 +9250,7 @@ break
                 } else {
                 let sections = [
                 {
-                title: "😛CHANGE BOT MENU😛",
+                title: "🏝️MENGANTI THUMBNAIL BOT MENU🏝️",
                 rows: [
                 {title: "Image Menu", rowId: `setmenu templateImage`, description: `Tap to change bot menu to Image Menu`},
                 {title: "Gif Menu", rowId: `setmenu templateGif`, description: `Tap to change bot menu to Gif Menu`},
@@ -10021,6 +10023,8 @@ await DhaffNetwork.send5ButGif(from, `
 ▌╟❯▁ ${prefix}sound160
 ▌╟❯▁ ${prefix}sound161
 ▌╟═══════⌬「 GAME 」
+▌╟❯▁ ${prefix}gameninjabox
+▌╟❯▁ ${prefix}gamekotakninja
 ▌╟❯▁ ${prefix}truth
 ▌╟❯▁ ${prefix}dare
 ▌╟❯▁ ${prefix}tictactoe
@@ -10130,7 +10134,43 @@ await DhaffNetwork.send5ButGif(from, `
 ▌╟❯▁ ${prefix}report [bug]
 ▌╚═════════
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+                          await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+break
+//case tambahan
+case 'assalamualaikum': case 'asalamualaikum': case 'samlekom':
+anux = `
+WAALAIKUM SALAM WR WB`
+m.replay(anux)
+           DhaffNetwork.sendMessage(m.chat, { react: { text: "😇", key: m.key }}) 
+                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/salam.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+break
+case 'mastah':
+yamateh = `
+Lari ada Mastah🏃`
+m.reply(yamateh)
+           DhaffNetwork.sendMessage(m.chat, { react: { text: "😲", key: m.key }}) 
+                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/mastah.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+break
+case 'anjing': case 'asu': case 'bokep': case 'ngentot': case 'kontol':
+blem = `
+Astaghfirullah Anak Siapa Ini Hadeh`
+m.reply(blem)
+           DhaffNetwork.sendMessage(m.chat, { react: { text: "🗿", key: m.key }}) 
+                               await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/tobat.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
+break
+
+case 'gameninjabox':
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+var unicorn = await getBuffer(picak+'Game Ninja')
+await DhaffNetwork.send5ButImg(from, `
+▛▀▀▀▀▀▀▀▀▀「 OWNER 」	
+▌╟❯▁ Game KotakNinja
+▌╟❯▁ https://cdpn.io/pen/debug/YzazMYN?authentication_hash=bYAdyONwnVzk
+▌╚═════════
+▙▃▃▃▃▃▃▃▃▃▃▃▃▃
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10157,7 +10197,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}anticall [on/off]
 ▌╟❯▁ ${prefix}coowner [add/del]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10209,7 +10249,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}delvote
 ▌╟❯▁${prefix}checkrent
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10230,7 +10270,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}inventory
 ▌╟❯▁${prefix}leaderboard
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10347,7 +10387,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}watercolor
 ▌╟❯▁ ${prefix}classic
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10374,7 +10414,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}getmusic [yt link]
 ▌╟❯▁${prefix}getvideo [yt link]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10410,7 +10450,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}gsmarena [query]
 ▌╟❯▁${prefix}drakor [query]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10448,7 +10488,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}slow [reply aud]
 ▌╟❯▁${prefix}squirrel [reply aud]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'randomimagemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10470,7 +10510,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}animewall [query]
 ▌╟❯▁${prefix}animewall2 [query]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'animemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10504,7 +10544,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}loli
 ▌╟❯▁${prefix}couplepp
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'stickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10521,7 +10561,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}lovesticker
 ▌╟❯▁ ${prefix}gura
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'animestickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10560,7 +10600,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}neko
 ▌╟❯▁${prefix}gura
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'nsfwmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10595,7 +10635,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}hneko
 ▌╟❯▁${prefix}nwaifu
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'funmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10669,7 +10709,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}fuckgirl
 ▌╟❯▁ ${prefix}playgirl
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10840,7 +10880,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}sound160
 ▌╟❯▁ ${prefix}sound161
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'gamemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10857,7 +10897,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}math [mode]
 ▌╟❯▁ ${prefix}suitpvp [tag]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'anonymousmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10871,7 +10911,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}next
 ▌╟❯▁${prefix}leave
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'toolmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10884,7 +10924,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}fliptext [text]
 ▌╟❯▁ ${prefix}toletter [number]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10902,7 +10942,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}getmsg
 ▌╟❯▁ ${prefix}delmsg
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'islamicmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10913,7 +10953,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╓───	
 ▌╟❯▁${prefix}juzamma
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'indomenu':
 	   if (isBan) return reply(mess.ban)
@@ -10954,7 +10994,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}earthquake
 ▌╟❯▁${prefix}tvschedule
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'indohoroscopemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10994,7 +11034,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁${prefix}zodiak
 ▌╟❯▁${prefix}shio
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'othermenu':
 	   if (isBan) return reply(mess.ban)
@@ -11020,7 +11060,7 @@ await DhaffNetwork.send5ButImg(from, `
 ▌╟❯▁ ${prefix}request
 ▌╟❯▁ ${prefix}report [bug]
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
