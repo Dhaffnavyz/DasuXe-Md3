@@ -10139,23 +10139,14 @@ await DhaffNetwork.send5ButGif(from, `
 break
 //case tambahan
 case 'assalamualaikum': case 'asalamualaikum': case 'samlekom':
-anux = `
-WAALAIKUM SALAM WR WB`
-m.replay(anux)
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😇", key: m.key }}) 
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/salam.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'mastah':
-yamateh = `
-Lari ada Mastah🏃`
-m.reply(yamateh)
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😲", key: m.key }}) 
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/mastah.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'anjing': case 'asu': case 'bokep': case 'ngentot': case 'kontol':
-blem = `
-Astaghfirullah Anak Siapa Ini Hadeh`
-m.reply(blem)
            DhaffNetwork.sendMessage(m.chat, { react: { text: "🗿", key: m.key }}) 
                                await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/tobat.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
