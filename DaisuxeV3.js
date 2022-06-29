@@ -9418,7 +9418,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             DhaffNetwork.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu' : {
+case 'allmenu' :
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
            DhaffNetwork.sendMessage(m.chat, { react: { text: "⏳", key: m.key }}) 
