@@ -1524,24 +1524,22 @@ const menulist = `
 ┌┯─────⌬ Halo kak 👋
 │└──⌬「 ${pushname} 」
 └┯─ll──⌬  Apa Kabar 😆?
-▛▀▀▀▀▀▀▀▀▀
-▌ ♨ *I N F O - B O T*
-▌╓───
-▌╟❯▁ *Bot Name:* _${global.botname}_
-▌╟❯▁ *Owner Name:* _${global.ownername}_
-▌╟❯▁ *Runtime:* _${runtime(process.uptime())}_
-▌╟❯▁ *Gc Bot:* _${global.gc}_
-▌╟❯▁ *Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
-▌╟❯▁ *Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_             
-▌╟❯▁ *Library:* _Baileys-Md_
-▌╟
-▌╚═════════
-▌  ♨ *Y O U R - I N F O*
-▌╓───
-▌╟❯▁ *Your Name:* _${pushname}_
-▌╟❯▁ *Your Limit:* _${limitawal}_
-▌╚═════════
-▙▃▃▃▃▃▃▃▃▃▃ 
+┌┼─────────⌬
+│ ♨ *I N F O - B O T*
+│╓──────⌬
+│╟❯▁ *Bot Name:* _${global.botname}_
+│╟❯▁ *Owner Name:* _${global.ownername}_
+│╟❯▁ *Runtime:* _${runtime(process.uptime())}_
+│╟❯▁ *Gc Bot:* _${global.gc}_
+│╟❯▁ *Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
+│╟❯▁ *Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_             
+│╟❯▁ *Library:* _Baileys-Md_
+│╟
+│╚═════════⌬
+│  ♨ *Y O U R - I N F O*
+│╓───
+│╟❯▁ *Your Name:* _${pushname}_
+│╚════════⌬
 └┯────⌬      
   │𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
   │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.ownernummenu}
@@ -10140,17 +10138,25 @@ break
 //case tambahan
 case 'assalamualaikum': case 'asalamualaikum': case 'samlekom':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😇", key: m.key }}) 
+kapulnax = `
+waalaikum salam wr wb`
+m.reply(kapulnax)           
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/salam.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'mastah':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😲", key: m.key }}) 
+freem = `
+Lari Ada Mastah🏃`
+m.reply(freem)           
                              await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/mastah.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'anjing': case 'asu': case 'bokep': case 'ngentot': case 'kontol':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "🗿", key: m.key }}) 
+breem = `
+YA AMPUN KASAR BANGET IH JADI ORANG`
+m.reply(breem)           
                                await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/tobat.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
-
 case 'gameninjabox':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
