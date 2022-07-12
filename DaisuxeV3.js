@@ -10179,8 +10179,11 @@ break
                 DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
             break
 case 'menu18+': 
-       DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-yamateh = `
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+	       DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+var unicorn = await getBuffer(picak+'Menu 18+')
+await DhaffNetwork.send5ButImg(from, `
 ▛▀▀▀▀▀▀▀▀▀
 ▌  🤤 *M E N U 18+*
 ▌╓───
@@ -10193,30 +10196,10 @@ yamateh = `
 ▌╟ ❯▁ ${prefix}pekob7
 ▌╟ ❯▁ ${prefix}pekob8
 ▌╚════════
-▙▃▃▃▃▃▃▃▃▃▃`
-let btn = [{
-                                urlButton: {
-                                    displayText: 'My Owner 🦅',
-                                    url: 'https://wa.me/6283824417034'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: 'My YouTube ❤️',
-                                    url: 'https://youtube.com/channel/UCIfD_R1Jph8MUe0ZbwKCstQ'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Thanks To 📌',
-                                    id: 'thx'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu Nya',
-                                    id: 'manu'
-                                }
-                            }]
-                            DhaffNetwork.send5ButMsg(m.chat, yamateh, global.copy, btn)
-            break
+▙▃▃▃▃▃▃▃▃▃▃
+` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+break
+
 //case tambahan
 case 'assalamualaikum': case 'asalamualaikum': case 'samlekom':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😇", key: m.key }}) 
