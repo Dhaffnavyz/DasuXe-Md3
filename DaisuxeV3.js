@@ -9635,6 +9635,16 @@ await DhaffNetwork.send5ButGif(from, `
 ▌╟❯▁${prefix}ytmp4 [url|quality]
 ▌╟❯▁${prefix}getmusic [yt link]
 ▌╟❯▁${prefix}getvideo [yt link]
+▌╟════⌬🤤 *M E N U 18+
+▌╟ ❯▁ ${prefix}pekob1
+▌╟ ❯▁ ${prefix}pekob2
+▌╟ ❯▁ ${prefix}pekob3
+▌╟ ❯▁ ${prefix}pekob4
+▌╟ ❯▁ ${prefix}pekob5
+▌╟ ❯▁ ${prefix}pekob6
+▌╟ ❯▁ ${prefix}pekob7
+▌╟ ❯▁ ${prefix}pekob8
+▌╟ ❯▁ ${prefix}menu18+
 ▌╟═══════⌬「 SEARCH 」	
 ▌╟❯▁${prefix}play [query]
 ▌╟❯▁${prefix}song [query]
@@ -10135,27 +10145,99 @@ await DhaffNetwork.send5ButGif(from, `
 ` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
                           await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
+//case pekob dewasa
+    case 'pekob1': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://a.top4top.io/m_234463vfl8.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob2': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://l.top4top.io/m_2344md6kd7.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob3': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://k.top4top.io/m_2344jsrwb6.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob4': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://i.top4top.io/m_2344c7czk5.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob5': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://h.top4top.io/m_2344e1dm54.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob6': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://g.top4top.io/m_2344r8ify3.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob7': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://f.top4top.io/m_2344tu8uy2.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+    case 'pekob8': 
+                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://e.top4top.io/m_234468aaj1.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
+                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+            break
+case 'menu18+': 
+       DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
+yamateh = `
+▛▀▀▀▀▀▀▀▀▀
+▌  🤤 *M E N U 18+*
+▌╓───
+▌╟ ❯▁ ${prefix}pekob1
+▌╟ ❯▁ ${prefix}pekob2
+▌╟ ❯▁ ${prefix}pekob3
+▌╟ ❯▁ ${prefix}pekob4
+▌╟ ❯▁ ${prefix}pekob5
+▌╟ ❯▁ ${prefix}pekob6
+▌╟ ❯▁ ${prefix}pekob7
+▌╟ ❯▁ ${prefix}pekob8
+▌╚════════
+▙▃▃▃▃▃▃▃▃▃▃`
+let btn = [{
+                                urlButton: {
+                                    displayText: 'My Owner 🦅',
+                                    url: 'https://wa.me/6283824417034'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'My YouTube ❤️',
+                                    url: 'https://youtube.com/channel/UCIfD_R1Jph8MUe0ZbwKCstQ'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Thanks To 📌',
+                                    id: 'thx'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu Nya',
+                                    id: 'manu'
+                                }
+                            }]
+                            DhaffNetwork.send5ButMsg(m.chat, yamateh, global.copy, btn)
+            break
 //case tambahan
 case 'assalamualaikum': case 'asalamualaikum': case 'samlekom':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😇", key: m.key }}) 
+                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/salam.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 kapulnax = `
 waalaikum salam wr wb`
 m.reply(kapulnax)           
-                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/salam.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'mastah':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "😲", key: m.key }}) 
+                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/mastah.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 freem = `
 Lari Ada Mastah🏃`
 m.reply(freem)           
-                             await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/mastah.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'anjing': case 'asu': case 'bokep': case 'ngentot': case 'kontol':
            DhaffNetwork.sendMessage(m.chat, { react: { text: "🗿", key: m.key }}) 
+                               await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/tobat.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 breem = `
 YA AMPUN KASAR BANGET IH JADI ORANG`
 m.reply(breem)           
-                               await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/tobat.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
 break
 case 'gameninjabox':
 	   if (isBan) return reply(mess.ban)
