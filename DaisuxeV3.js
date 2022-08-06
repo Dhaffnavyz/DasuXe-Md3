@@ -9635,16 +9635,6 @@ await DhaffNetwork.send5ButGif(from, `
 ▌╟❯▁${prefix}ytmp4 [url|quality]
 ▌╟❯▁${prefix}getmusic [yt link]
 ▌╟❯▁${prefix}getvideo [yt link]
-▌╟════⌬🤤 *M E N U 18+
-▌╟ ❯▁ ${prefix}pekob1
-▌╟ ❯▁ ${prefix}pekob2
-▌╟ ❯▁ ${prefix}pekob3
-▌╟ ❯▁ ${prefix}pekob4
-▌╟ ❯▁ ${prefix}pekob5
-▌╟ ❯▁ ${prefix}pekob6
-▌╟ ❯▁ ${prefix}pekob7
-▌╟ ❯▁ ${prefix}pekob8
-▌╟ ❯▁ ${prefix}menu18+
 ▌╟═══════⌬「 SEARCH 」	
 ▌╟❯▁${prefix}play [query]
 ▌╟❯▁${prefix}song [query]
@@ -10144,60 +10134,6 @@ await DhaffNetwork.send5ButGif(from, `
 ▙▃▃▃▃▃▃▃▃▃▃▃▃▃
 ` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
                           await DhaffNetwork.sendMessage(m.chat, {audio:  fs.readFileSync('./galery/audio/allmenu.mp3'), mimetype: 'audio/mp4', ptt:true}, {quoted:m})
-break
-//case pekob dewasa
-    case 'pekob1': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://a.top4top.io/m_234463vfl8.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob2': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://l.top4top.io/m_2344md6kd7.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob3': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://k.top4top.io/m_2344jsrwb6.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob4': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://i.top4top.io/m_2344c7czk5.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob5': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://h.top4top.io/m_2344e1dm54.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob6': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://g.top4top.io/m_2344r8ify3.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob7': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://f.top4top.io/m_2344tu8uy2.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-    case 'pekob8': 
-                DhaffNetwork.sendMessage(m.chat, { video: { url: 'https://e.top4top.io/m_234468aaj1.mp4' }, caption: `*Hi Bro ${m.pushName}*\n\nTuh Pekob Nya Untuk cara download video nya tekan gambarnya lalu klik download Jangan Lupa Donasi Me : \n\n🍂 Qr Dana : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/6283824417034 (Click To Contact)` }, { quoted: m })
-                DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-            break
-case 'menu18+': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-	       DhaffNetwork.sendMessage(m.chat, { react: { text: "🤤", key: m.key }})                
-var unicorn = await getBuffer(picak+'Menu 18+')
-await DhaffNetwork.send5ButImg(from, `
-▛▀▀▀▀▀▀▀▀▀
-▌  🤤 *M E N U 18+*
-▌╓───
-▌╟ ❯▁ ${prefix}pekob1
-▌╟ ❯▁ ${prefix}pekob2
-▌╟ ❯▁ ${prefix}pekob3
-▌╟ ❯▁ ${prefix}pekob4
-▌╟ ❯▁ ${prefix}pekob5
-▌╟ ❯▁ ${prefix}pekob6
-▌╟ ❯▁ ${prefix}pekob7
-▌╟ ❯▁ ${prefix}pekob8
-▌╚════════
-▙▃▃▃▃▃▃▃▃▃▃
-` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ☕","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 
 //case tambahan
