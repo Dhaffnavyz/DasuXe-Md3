@@ -20,7 +20,7 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['6283824417034'] //masukin no owner nya
+global.owner = ['6283824417034','6285797226828'] //masukin no owner nya
 global.ownername = "DaisuXe-Md"
 global.ytname = "YT: DHAFF OFFICIAL" //ur yt chanel name
 global.socialm = "GitHub: Dhaffnavyz" //ur github or insta name
@@ -28,9 +28,10 @@ global.location = "Indonesia, Jawabarat, Rancaekek" //ur location
 
 //bot bombdy
 global.botname = "DaisuXe-Md" //ur bot name
+global.ytwebsite = "https://youtu.be/JcXWXjdG9hI"
 global.websitex = "https://bit.ly/Dhaffwebsite_my-id" //ur website
 global.vidmenu = { url: 'https://k.top4top.io/m_2368l5agg1.mp4' } //gif and video menu
-global.packname = "DasuXe Bot Stickers\n\n\n\n\n\n\n🕊️🕊️ "
+global.packname = "DasuXe Bot Stickers\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🕊️🕊️ "
 global.author = "DHAFF OFFICIAL" 
 global.themeemoji = "🕊️"
 global.reactmoji = "🐣"
